@@ -1,15 +1,18 @@
+#PIPELINE NAME AND PERMISSION
 name: Product Service CI/CD
 
 permissions:
   contents: read
 
+
+#TRIGGER ZONE
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
-
+  
+#JOB
 jobs:
   build:
     runs-on: ubuntu-latest
